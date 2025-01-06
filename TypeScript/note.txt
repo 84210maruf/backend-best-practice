@@ -1,0 +1,12 @@
+index.html:
+    <script src="./output/script.js"></script>
+
+cmd : tsc init
+
+tsconfig.json:
+    "outDir": "./output", -->create js file                                   /* Specify an output folder for all emitted files. */
+    "rootDir": "./src",  -->create .ts file 
+
+
+
+cmd : tsc -w
