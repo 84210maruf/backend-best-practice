@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {                   // Root directory of input files.
+      "outDir": "./dist",                  // Directory for compiled output files.
+      "strict": true,                      // Enable strict type checking.
+      "esModuleInterop": true,             // Enable interoperability between CommonJS and ES modules.
+      "sourceMap": true,                   // Enable source maps for debugging.
+      "lib": ["esnext"]                    // Include ES2021 library definitions.
+    }
+  }
+  
