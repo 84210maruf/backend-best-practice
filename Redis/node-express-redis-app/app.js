@@ -59,11 +59,11 @@ app.get('/photos/:id', async (req, res) => {
     res.json(data);
 });
 
-function getOrSetCache(key, cb) {
+async function getOrSetCache(key, cb) {
     return new Promise((resolve, reject) => {
         redisClient.get(key, async (error, data) => {
             if(error) return reject(error)
-            if(data != null) return resolve(JSON.parse(data))
+            if(data !== null) return resolve(JSON.parse(data))
             const freshData = await cb()
             redisClient.SETEX(key,DEFULT_EXPRESSION, JSON.stringify(freshData))
             resolve(freshData)
