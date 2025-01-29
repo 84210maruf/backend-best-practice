@@ -19,17 +19,32 @@
 
 *** using MongoDB ***
 
-# 
-#
-#
-#
-#
+*** Setup Prisma and mongoDB from scrach ***
 
- Usage
+# bun i prisma --sev-dev    
+# bunx prisma 
+# bunx prisma init    
+
+* create [.env] file and define [BASE_URL="connection_string] for [mongodb/postgresql/mysql] etc" and inside [prisma/schema.prisma] Edite [provider="mongodb"]OR [provider="postgresql"] whatever you want
+
+* after create a schema or change anything in [prisma/schema.prisma] run cmd below
+  # npx prisma db push                                       
+  # npx prisma studio [for see database]
+
+# bun add @prisma/client [and create [lib/prisma.ts] and configure]
+# bun dev [start_server] 
+
+
+
+
+
+
+
+
+
+[Usage]
 
       $ prisma [command]
-
-    Commands
 
                 init   Set up Prisma for your app
             generate   Generate artifacts (e.g. Prisma Client)  
