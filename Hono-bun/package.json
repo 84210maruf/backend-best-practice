@@ -10,5 +10,6 @@
   },
   "dependencies": {
     "hono": "^4.6.18"
-  }
+  },
+  "private": true
 }
