@@ -24,7 +24,7 @@ let b: number
 let c: string | number | boolean; //c is a number or string
 
 a = 'zidan'
-b = 102
+b = 10
 c = 'zidan' //OR
 c = 102 //OR
 c = true

@@ -18,7 +18,7 @@ let a;
 let b;
 let c; //c is a number or string
 a = 'zidan';
-b = 102;
+b = 10;
 c = 'zidan'; //OR
 c = 102; //OR
 c = true;
