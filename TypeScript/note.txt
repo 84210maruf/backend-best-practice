@@ -4,7 +4,7 @@ index.html:
 cmd : tsc init
 
 tsconfig.json:
-    "outDir": "./output", -->create js file                                   /* Specify an output folder for all emitted files. */
+    "outDir": "./output", -->create js file       /* Specify an output folder for all emitted files. */
     "rootDir": "./src",  -->create .ts file 
 
 
